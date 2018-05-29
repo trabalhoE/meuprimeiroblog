@@ -21,6 +21,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
 class Aluno(models.Model):
     matricula=models.CharField(max_length=12,primary_key=True)
     nome=models.CharField(max_length=32)
@@ -28,5 +29,17 @@ class Aluno(models.Model):
     def __str__(self):
         return self.nome
 
+class Turma(models.Model):
+    id=models.CharField(max_length=3,primary_key=True)
+    ano=models.IntegerField(max_length=4)
+
+    def __str__(self):
+        return self.id+"-"+str(self.ano)
 
 
+class TurmaAluno(models.Model):
+    cod=models.ForeignKey(Turma)
+    aluno=models.ForeignKey(Aluno)
+
+    def __str__(self):
+        return str(self.cod)+" - "+str(self.aluno)
