@@ -17,10 +17,11 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from blog.views import index
+from blog.views import exibir
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    #url(r'^$',index,name="index"),
-    url(r'^$','blog.views.index'),
-    url(r'^perfis$','blog.views.exibir')
+    url(r'^$',index,name="index"),
+    #url(r'^$','blog.views.index'),
+    url(r'^perfis$',exibir)
 ]
