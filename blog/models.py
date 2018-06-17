@@ -35,7 +35,7 @@ class Turma(models.Model):
     ano=models.IntegerField(max_length=4)
 
     def __str__(self):
-        return self.id+"-"+str(self.ano)
+        return str(self.id)+"-"+str(self.ano)
 
 
 class TurmaAluno(models.Model):

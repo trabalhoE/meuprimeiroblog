@@ -28,7 +28,7 @@ SECRET_KEY = 'k$rjm_rbb6)pwc17y@jud2(mdcwqn*vk$lrovc2yug*ld55+50'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost', 'elanne.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','DWpt2.pythonanywhere.com']
 
 
 # Application definition
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/Sao_Paulo'
+TIME_ZONE = 'America'
 
 USE_I18N = True
 
